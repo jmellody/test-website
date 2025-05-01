@@ -1,0 +1,49 @@
+<div style="margin-bottom: 30px; display: flex; align-items: flex-start; gap: 20px;">
+
+  <!-- Image Box (Fixed Height) -->
+  {% if include.image %}
+    <div style="width: 350px; height: 200px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border: 1px solid #ddd; flex-shrink: 0;">
+      <img src="{{ site.baseurl }}{{ include.image }}" alt="Image for {{ include.title }}" style="width: 100%; height: 100%; display: block;">
+    </div>
+
+    <!-- Vertical Divider -->
+    <div style="width: 1px; background-color: #ccc;"></div>
+  {% endif %}
+
+  <!-- Text Content -->
+  <div style="flex-grow: 1;">
+    <h4 style="margin-top: 0;">{{ include.title }}</h4>
+
+    {% if include.coauthors %}
+      <p style="margin-top: -10px; font-size: 0.9em; color: #555;">
+        <em>with {{ include.coauthors }}</em>
+      </p>
+    {% endif %}
+
+    <div style="margin-bottom: 10px;">
+      {% if include.pdf_link %}
+        <a href="{{ site.baseurl }}{{ include.pdf_link }}" target="_blank" 
+          style="display:inline-block; background-color:#f2f2f2; color:#333; padding:2px 8px; margin-bottom:4px; border-radius:6px; font-size:0.85em; text-decoration:none; border:1px solid #ccc;">
+          PDF
+        </a>
+      {% endif %}
+      {% if include.url_link %}
+        <a href="{{ include.url_link }}" target="_blank" 
+          style="display:inline-block; background-color:#e6f0ff; color:#333; padding:2px 8px; margin-bottom:4px; border-radius:6px; font-size:0.85em; text-decoration:none; border:1px solid #99c;">
+          Link
+        </a>
+      {% endif %}
+    </div>
+    
+    {% if include.abstract %}
+    <details style="margin-top: 5px;">
+      <summary style="cursor:pointer; background-color:#f2f2f2; color:#333; padding:2px 8px; border-radius:6px; font-size:0.85em; border:1px solid #ccc; display: inline-block;">
+          Abstract
+      </summary>
+      <div style="margin-top: 8px; padding: 8px 0;">
+        <p style="margin: 0;">{{ include.abstract }}</p>
+      </div>
+    </details>
+    {% endif %}
+  </div>
+</div>
