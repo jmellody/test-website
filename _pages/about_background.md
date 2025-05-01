@@ -1,9 +1,9 @@
 ---
-layout: about
-title: about
-permalink: /
-subtitle: 
-nav_order: 1
+# layout: about
+# title: about
+# permalink: /
+# subtitle: 
+# nav_order: 1
 
 profile:
   align: right

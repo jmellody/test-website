@@ -56,15 +56,46 @@ nav_order: 2
     image="/assets/img/decadal.jpg"
     abstract="In this project, we investigate how remote and hybrid collaboration environments shape consensus-building in scientific communities. Focusing on the decadal planning processes of three NASA science teams during or immediately following the COVID-19 pandemic, we combine ethnographic methods with computational analysis of planning documents to characterize how remote collaboration impacts group decision-making. Through interviews and observational data, we identify three structural tensions—a paradox of voice, a paradox of constraint, and a paradox of transparency—that illustrate a central trade-off: remote collaboration expands participation and cognitive diversity but introduces friction in prioritization and convergence. To assess downstream impacts of these dynamics, we analyze the textual outputs of the decadal processes using natural language processing techniques, examining shifts in emphasis, dissent, and alignment over time. Our findings offer insight into the design of effective decision-making frameworks in distributed scientific collaborations." %}
 
-    
-
-
-
-
-
-
-
-
-
-
 ---
+<head>
+  <style>
+    /* Mobile-specific styles for the research page */
+    @media (max-width: 768px) {
+      .research-item {
+        flex-direction: column; /* Stack the image and text vertically */
+      }
+
+      .research-image {
+        width: 100%; /* Make the image take full width */
+        height: auto; /* Ensure aspect ratio is maintained */
+      }
+
+      .research-text {
+        width: 100%; /* Make text take full width */
+        padding: 10px 0; /* Add padding for some spacing */
+      }
+
+      /* Ensure headings scale down on mobile */
+      .research-text h4 {
+        font-size: clamp(1rem, 5vw, 1.2rem); /* Adjust font size for better readability */
+      }
+
+      /* Adjust the buttons for mobile */
+      .research-buttons a {
+        display: block; /* Make the buttons stack vertically */
+        width: 100%; /* Make buttons take full width */
+        margin-bottom: 10px; /* Space between buttons */
+        padding: 8px;
+      }
+
+      /* Ensure the abstract section is responsive */
+      details summary {
+        font-size: 1rem; /* Increase readability for summary on mobile */
+      }
+
+      details div {
+        font-size: 0.95rem; /* Adjust text size inside abstract */
+      }
+    }
+  </style>
+</head>
