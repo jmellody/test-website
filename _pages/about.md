@@ -35,23 +35,57 @@ announcements:
 
 ---
 
-
-
 <!-- Full-page background image with semi-transparent overlay -->
-<div style="position: relative; width: 100%; background: url('{{ site.baseurl }}/assets/img/culture.jpg') center center no-repeat; background-size: cover; padding: 2rem 1rem;">
-  <div style="background-color: rgba(255, 255, 255, 0.85); padding: 2rem; border-radius: 8px; max-width: 800px; margin: 0 auto; box-sizing: border-box;">
+<div class="background-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100vh; background: url('{{ site.baseurl }}/assets/img/culture.jpg') center center no-repeat; background-size: cover; z-index: -1;">
+  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(255, 255, 255, 0.85); z-index: 1;"></div>
+</div>
 
-    <div style="text-align: left;">
-      <p style="font-size: 1.1rem; line-height: 1.6;">
-        I am a Postdoctoral Research Associate at the Center for Information Technology Policy at Princeton University. I received my PhD in Management from MIT Sloan, with a focus on computational social science.
+<!-- Content Section -->
+<div class="content-container" style="position: relative; z-index: 2; padding-top: 0px; display: flex; justify-content: flex-start;">
+  <div class="post" style="background-color: rgba(255, 255, 255, 0.9); padding: 20px; border-radius: 8px; max-width: 700px; margin: 20px; font-family: Arial, sans-serif;">
+    <article>
+      <p style="font-size: clamp(1em, 2vw, 1.2em); line-height: 1.7;">
+        I am Postdoctoral Research Associate at the Center for Information Technology Policy at Princeton University. I received my PhD in Management from MIT Sloan, with a focus on computational social science.
       </p>
-      <p style="font-size: 1.1rem; line-height: 1.6;">
+      <p style="font-size: clamp(1em, 2vw, 1.2em); line-height: 1.7;">
         In my primary stream of research, I study user dynamics on online communities, leveraging a broad array of analytical techniques including causal inference, network analysis, and natural language processing. In a second stream of research, I use mixed methods to study how collaboration is changing in the face of evolving communications technologies.
       </p>
-    </div>
-
+    </article>
   </div>
 </div>
+
+<!-- Mobile-specific Layout Adjustments -->
+<style>
+  /* Mobile view adjustments */
+  @media (max-width: 768px) {
+    /* Adjust the background container to have padding and ensure the article is placed below */
+    .background-container {
+      position: relative; /* Allow the content to flow */
+      height: auto; /* Allow it to grow with content */
+      padding-top: 30px; /* Add space to prevent overlap */
+    }
+
+    .content-container {
+      flex-direction: column; /* Stack content vertically */
+      justify-content: flex-start;
+      width: 100%;
+      margin-top: 40px; /* Ensure some space between background and content */
+    }
+
+    /* Adjust the text to make it more readable on mobile */
+    .post {
+      width: 100%; /* Full width on mobile */
+      margin: 10px;
+      padding: 15px;
+    }
+
+    .post p {
+      font-size: clamp(1rem, 3vw, 1.1rem); /* Adjust font size for readability */
+    }
+  }
+</style>
+
+
 
 
 
