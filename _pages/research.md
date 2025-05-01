@@ -2,6 +2,7 @@
 layout: page
 permalink: /research/
 title: research
+show_title: false
 description:
 nav: true
 nav_order: 2
@@ -48,9 +49,22 @@ nav_order: 2
     image="/assets/img/wsb.jpg" 
     abstract="Research on collective action highlights the importance of language in motivating participation and coordinating action. I argue that language which is effective at motivating and coordinating new joiners can also play a role in fracturing the collective. This is because the synthesis required to succinctly pitch a cause can overly simplify its core tenets. New joiners can quickly understand and easily signal their participation in a cause by engaging in this “cheap talk”—but their understanding and participation may be surface level, aligned with a particular element of the cause but critically misaligned with the broader culture of the existing group. I study this phenomenon in the context of the 2021 short squeeze of the GameStop stock. I leverage data from the Reddit community r/wallstreetbets, where the short squeeze was largely coordinated. I find that the usage of meme language increased leading up to the short squeeze, and that new joiners adopted this language more quickly and with more intensity than pre-existing users. While this talk facilitated an increase in membership and coordination around the time of the short squeeze, it became a source of contention in the months and years after the squeeze, transforming into a cultural fault line distinguishing hype-driven “meme” investors from pre-existing community members." %}
 
+
 {% include research.liquid 
-    title="Remote Consensus is an Oxymoron: Lessons Learned from Pandemic-Era Scientists’ Deliberation Practices" 
-    coauthors="Janet Vertesi" 
-    image="/assets/img/decadal.jpg" %}
+    title="Remote Consensus is an Oxymoron: Lessons Learned from Pandemic-Era Scientists’ Deliberation Practices"
+    coauthors="Janet Vertesi"
+    image="/assets/img/decadal.jpg"
+    abstract="In this project, we investigate how remote and hybrid collaboration environments shape consensus-building in scientific communities. Focusing on the decadal planning processes of three NASA science teams during or immediately following the COVID-19 pandemic, we combine ethnographic methods with computational analysis of planning documents to characterize how remote collaboration impacts group decision-making. Through interviews and observational data, we identify three structural tensions—a paradox of voice, a paradox of constraint, and a paradox of transparency—that illustrate a central trade-off: remote collaboration expands participation and cognitive diversity but introduces friction in prioritization and convergence. To assess downstream impacts of these dynamics, we analyze the textual outputs of the decadal processes using natural language processing techniques, examining shifts in emphasis, dissent, and alignment over time. Our findings offer insight into the design of effective decision-making frameworks in distributed scientific collaborations." %}
+
+    
+
+
+
+
+
+
+
+
+
 
 ---

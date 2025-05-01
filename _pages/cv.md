@@ -1,15 +1,12 @@
 ---
-layout: page
-permalink: /cv/
+layout: default
 title: cv
+permalink: assets/pdf/Mellody_CV_2025.pdf
+newtab: true
 nav: true
-nav_order: 5
-toc:
-  sidebar: left
+nav_order: 3
+cv_pdf: /assets/pdf/Mellody_CV_2025.pdf  # This should point to your actual PDF file
+description: "Your CV description here."
 ---
 
 
-<script type="text/javascript">
-  window.open("{{ site.baseurl }}/assets/pdf/Mellody_CV_2025.pdf", "_blank");
-  window.location.replace("{{ site.baseurl }}/assets/pdf/Mellody_CV_2025.pdf");
-</script>

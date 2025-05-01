@@ -1,29 +1,31 @@
 {% capture footer_contents %}
-  &copy; Copyright {{ site.time | date: '%Y' }}
-  {{ site.first_name }}
-  {{ site.middle_name }}
-  {{ site.last_name }}. {{ site.footer_text }}
-  {% if site.impressum_path %}
-    <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-  {% endif %}
-  {% if site.last_updated %}
-    Last updated: {{ 'now' | date: '%B %d, %Y' }}.
-  {% endif %}
+  <p style="font-size: 1em; margin: 2px 0; color: #fff;">
+    &copy; Copyright {{ site.time | date: '%Y' }}
+    {{ site.first_name }}
+    {{ site.middle_name }}
+    {{ site.last_name }}. {{ site.footer_text }}
+    {% if site.impressum_path %}
+      <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}" style="font-size: 0.75em; color: #fff; text-decoration: underline;">Impressum</a>.
+    {% endif %}
+    {% if site.last_updated %}
+      Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+    {% endif %}
+  </p>
 {% endcapture %}
 
 {% if site.footer_fixed %}
-  <footer class="fixed-bottom" role="contentinfo">
-    <div class="container mt-0">
+  <footer class="fixed-bottom" role="contentinfo" style="background-color: #333; padding: 1px 0;">
+    <div class="container" style="font-size: 0.75em; padding: 4px 20px; color: #fff;">
       {{ footer_contents }}
     </div>
   </footer>
 {% else %}
-  <footer class="sticky-bottom mt-5" role="contentinfo">
+  <footer class="sticky-bottom mt-5" role="contentinfo" style="background-color: #333; padding: 1px 0;">
     {% if site.newsletter.enabled %}
       {% include newsletter.liquid %}
     {% endif %}
-
-    <div class="container">
+    
+    <div class="container" style="font-size: 0.75em; padding: 4px 20px; color: #fff;">
       {{ footer_contents }}
     </div>
   </footer>
