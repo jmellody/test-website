@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle: Computational Social Scientist
 nav_order: 1
 
 profile:
@@ -10,9 +10,8 @@ profile:
   image: prof_pic_small.jpg
   image_circular: false # crops the image to make it circular
   more_info: > 
-    <p> Postdoctoral Research Associate </p>
-    <p> <a href="https://citp.princeton.edu/" target="_blank" rel="noopener noreferrer"> Princeton CITP </a> </p>  
-    <p> jamesmellody@princeton.edu </p>
+    <p><a href="mailto:jamesmellody@princeton.edu">jamesmellody@princeton.edu</a></p>
+
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -23,10 +22,11 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 ---
+<div style="font-size: 1.5rem; white-space: pre-wrap; line-height: 1.2;">  
+I am a Postdoctoral Research Associate at the <a href="https://citp.princeton.edu/" target="_blank" rel="noopener noreferrer">Center for Information Technology Policy</a> at Princeton University. I received my PhD from <a href="https://mitsloan.mit.edu/" target="_blank" rel="noopener noreferrer">MIT Sloan</a>, with a focus on computational social science.
 
-I am Postdoctoral Research Associate at the Center for Information Technology Policy at Princeton University. I received my PhD in Management from MIT Sloan, with a focus on computational social science.
-
-In my primary stream of research, I study user dynamics on online communities, leveraging a broad array of analytical techniques including causal inference, network analysis, and natural language processing. In a second stream of research, I use mixed methods to study how collaboration is changing in the face of evolving communications technologies.
+In my primary stream of research, I study user behavior and dynamics in large-scale online communities, leveraging a broad array of analytical techniques including causal inference, network analysis, and natural language processing. In a second stream of research, I use mixed methods to study how collaboration is changing with new communication technologies.
+</div>
 
 
 

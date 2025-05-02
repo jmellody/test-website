@@ -1,17 +1,59 @@
-<div style="margin-bottom: 30px; display: flex; align-items: flex-start; gap: 20px;">
+<style>
+  .pub-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-direction: row;
+  }
 
-  <!-- Image Box (Fixed Height) -->
+  .pub-image-box {
+    width: 350px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    flex-shrink: 0;
+  }
+
+  .pub-divider {
+    width: 1px;
+    background-color: #ccc;
+  }
+
+  .pub-text {
+    flex-grow: 1;
+    min-width: 0;
+  }
+
+  @media (max-width: 767px) {
+    .pub-container {
+      flex-direction: column;
+    }
+
+    .pub-image-box {
+      width: 100%;
+      height: auto;
+    }
+
+    .pub-divider {
+      display: none;
+    }
+  }
+</style>
+
+<div class="pub-container">
+
   {% if include.image %}
-    <div style="width: 350px; height: 200px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border: 1px solid #ddd; flex-shrink: 0;">
-      <img src="{{ site.baseurl }}{{ include.image }}" alt="Image for {{ include.title }}" style="width: 100%; height: 100%; display: block;">
+    <div class="pub-image-box">
+      <img src="{{ site.baseurl }}{{ include.image }}" alt="Image for {{ include.title }}" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
 
-    <!-- Vertical Divider -->
-    <div style="width: 1px; background-color: #ccc;"></div>
+    <div class="pub-divider"></div>
   {% endif %}
 
-  <!-- Text Content -->
-  <div style="flex-grow: 1;">
+  <div class="pub-text">
     <h4 style="margin-top: 0;">{{ include.title }}</h4>
 
     {% if include.coauthors %}
@@ -34,10 +76,9 @@
         </a>
       {% endif %}
     </div>
-    
+
     {% if include.abstract %}
       <details style="margin-top: 5px;">
-        <!-- Change the background color of the summary/abstract button to light green, outline darkness matches other boxes -->
         <summary style="cursor:pointer; background-color:#d4f1d4; color:#333; padding:4px 10px; border-radius:6px; font-size:0.85em; border:1px solid #99c; display: inline-block;">
             Abstract
         </summary>
@@ -46,6 +87,5 @@
         </div>
       </details>
     {% endif %}
-
   </div>
 </div>
