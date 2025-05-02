@@ -22,7 +22,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 ---
-<div style="font-size: 1.5rem; line-height: 1.6;">
+<div style="font-size: 1.5rem; line-height: 1.5;">
   <p>
     I am a Postdoctoral Research Associate at the 
     <a href="https://citp.princeton.edu/" target="_blank" rel="noopener noreferrer">
@@ -35,7 +35,7 @@ announcements:
   </p>
 
   <p>
-    In my primary stream of research, I study user behavior and dynamics in large-scale online communities, leveraging a broad array of analytical techniques including causal inference, network analysis, and natural language processing. In a second stream of research, I use mixed methods to study how collaboration is changing with new communication technologies.
+    In my primary stream of research, I study user behavior and dynamics in large-scale online communities, leveraging a broad array of quantitative methods including causal inference, network analysis, and natural language processing. In a second stream of research, I use mixed methods to study how collaboration is changing with new communication technologies.
   </p>
 </div>
 
