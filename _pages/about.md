@@ -22,10 +22,21 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 ---
-<div style="font-size: 1.5rem; white-space: pre-wrap; line-height: 1.2;">  
-I am a Postdoctoral Research Associate at the <a href="https://citp.princeton.edu/" target="_blank" rel="noopener noreferrer">Center for Information Technology Policy</a> at Princeton University. I received my PhD from <a href="https://mitsloan.mit.edu/" target="_blank" rel="noopener noreferrer">MIT Sloan</a>, with a focus on computational social science.
+<div style="font-size: 1.5rem; line-height: 1.6;">
+  <p>
+    I am a Postdoctoral Research Associate at the 
+    <a href="https://citp.princeton.edu/" target="_blank" rel="noopener noreferrer">
+      Center for Information Technology Policy
+    </a> 
+    at Princeton University. I received my PhD from 
+    <a href="https://mitsloan.mit.edu/" target="_blank" rel="noopener noreferrer">
+      MIT Sloan
+    </a>, with a focus on computational social science.
+  </p>
 
-In my primary stream of research, I study user behavior and dynamics in large-scale online communities, leveraging a broad array of analytical techniques including causal inference, network analysis, and natural language processing. In a second stream of research, I use mixed methods to study how collaboration is changing with new communication technologies.
+  <p>
+    In my primary stream of research, I study user behavior and dynamics in large-scale online communities, leveraging a broad array of analytical techniques including causal inference, network analysis, and natural language processing. In a second stream of research, I use mixed methods to study how collaboration is changing with new communication technologies.
+  </p>
 </div>
 
 
